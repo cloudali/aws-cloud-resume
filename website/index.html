@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ali's Cloud Resume</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="Ali" />
+    <meta name="description" content="Ali's Cloud Resume" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Ali's Cloud Resume" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="cloudali.io" />
+    <meta property="og:image" content="assets/images/social.jpg" />
+    <meta property="og:description" content="Web resume made in AWS." />
+    <meta property="og:site_name" content="Ali's Cloud Resume" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/vendors/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+	
+</head>
+<body>
+    <main class="main">
+	    <div class="container gutter-top gutter-bottom">
+		    <div class="row sticky-parent">
+			    <!-- Sidebar -->
+                <aside class="col-12 col-md-12 col-xl-3">
+				    <div class="sidebar box-outer sticky-column">
+						<!-- My photo -->
+						<div class="sidebar__base-info">
+					    	<figure class="avatar-box">
+                                <img src="assets/images/ali-avatar.png" alt="Ricardo Black">
+						    </figure>
+
+						    <div class="text-xl-center">
+						        <h3 class="title title--h3 sidebar__name">Ali Yusuf</h3>
+							    <div class="visitor">Visitors: <span id="visitor"></span>
+			
+						    </div>
+
+							<button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>Show Contacts</span><i class="feathericon-chevron-down"></i></button>
+						</div>
+
+						<div class="sidebar__additional-info js-show">
+							<div class="separation"></div>
+		                    <ul class="details-info">
+							    <!-- Email -->
+							    <li class="details-info__item">
+							        <span class="box icon-box"><i class="font-icon icon-envelope"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Email</span>
+									    <a class="text-overflow" href="mailto:yusuf@umn.edu" title="yusuf@umn.edu">yusuf@umn.edu</a>
+								    </div>
+							    </li>
+							    
+								<!-- Location -->
+						        <li class="details-info__item">
+								    <span class="box icon-box"><i class="font-icon icon-location"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Location</span>
+									    <span class="text-overflow" title="San-Francisco, USA">Minneapolis USA</span>
+								    </div>
+							    </li>
+					        </ul>
+						    <div class="separation d-xl-none"></div>
+
+						    <!-- Social -->
+						    <div class="social">
+							    <a class="social__link" href="#"><i class="feathericon-github"></i></a>
+							    <a class="social__link" href="#"><i class="feathericon-twitter"></i></a>
+						  	    <a class="social__link" href="#"><i class="feathericon-zap"></i></a>
+						    </div>
+							
+							</div>
+						</div>	
+					</div>	
+		        </aside>
+		        
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-xl-9">
+				    <div class="box-outer">
+					    <!-- Menu -->
+						<div class="nav-container js-tabs">
+						    <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav__item" role="presentation"><a id="about-tab" class="active" href="#about" data-bs-toggle="tab" role="tab" aria-controls="about" aria-selected="true">About</a></li>
+								<li class="nav__item" role="presentation"><a id="resume-tab" href="#resume" data-bs-toggle="tab" role="tab" aria-controls="resume" aria-selected="false">Resume</a></li>
+                                <li class="nav__item" role="presentation"><a id="blog-tab" href="#blog" data-bs-toggle="tab" role="tab" aria-controls="blog" aria-selected="false">Blog</a></li>
+                            </ul>
+						</div>
+
+			            <div class="content tab-content" id="myTabContent"><!-- id="content" -->
+							<!-- INTRODUCTION -->
+						    <div id="about" class="tab-pane fade show active _tabcontent _active" role="tabpanel" aria-labelledby="about-tab"><!-- id="about-tab" -->
+						        <div class="pb-0 pb-sm-2">
+		                            <h1 class="title title--h1 title__separate">Introduction</h1>
+									<h5>Welcome to my web resume! I built this web app on AWS as part of the Cloud Resume Challenge. 
+									</h5>
+									<br>
+									<p>The Cloud Resume Challenge is a hands-on project designed by Forrest Brazeal to help newbies bridge the gap from cloud certification to cloud job. It incorporates many of the skills that real cloud and DevOps engineers use in their daily work. You can read more about it <a href="https://cloudresumechallenge.dev/" target="_blank">here!</a>
+									</p>
+					            </div>
+								<h1 class="title title--h1 title__separate">About Me</h1>
+								<p>Results-focused digital marketing leader with an extensive understanding of digital marketing & public relations looking to transition into the Cloud Computing industry as a DevOps Engineer / Cloud Architect. I have experience in client–facing and managerial positions and have achieved 3 certifications. 
+								</p>
+
+					            <!-- Certifications -->
+					        	<h2 class="title title--h2 mt-3">My Certifications</h2>
+								<p> Badges are also available on <a href="https://www.credly.com/users/aliy/badges">Credly</a></p>
+							        <!-- Certification Item-->
+							        <div class="col-12 col-lg">
+							            <div class="case-item box box-inner">
+									        <img class="case-item__icon" src="assets/icons/AWS-Certified-SAP.svg" alt="" />
+									        <div>
+									            <h3 class="title title--h3">AWS Certified Solutions Architect - Professional</h3>
+										        <p class="case-item__caption">Validation#: 4013RGKCSFB1QW5Y
+													<br><a href="https://aws.amazon.com/verification"> Validate here</a>
+												</p>
+									        </div>	
+								        </div>
+							        </div>
+									<!-- Certification Item -->
+									<div class="row"> 
+								  <div class="col-12 col-lg-6">
+									<div class="case-item box box-inner">
+										<img class="case-item__icon" src="assets/icons/AWS-Certified-DOP.svg" alt="" />
+										<div>
+											<h3 class="title title--h3">AWS Certified DevOps Engineer - Professional</h3>
+											<p class="case-item__caption">Validation#: T0HLVK71SEF1Q35Y
+												<br><a href="https://aws.amazon.com/verification"> Validate here</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							
+								<!-- Certification Item -->
+								<div class="col-12 col-lg-6">
+									<div class="case-item box box-inner">
+										<img class="case-item__icon" src="assets/icons/AWS-Certified-SAA.svg" alt="" />
+										<div>
+											<h3 class="title title--h3">AWS Certified Solutions Architect - Associate	
+											</h3>
+											<p class="case-item__caption">Validation#: S8KPVXMC5FR1QTW4 
+												<br><a href="https://aws.amazon.com/verification"> Validate here</a>
+											</p>
+										</div>
+									</div>
+								</div>
+									</div>
+							      
+								
+						
+						        <!-- Tools -->
+						        <h2 class="title title--h2 mt-4">Tools & Programming Languages</h2>
+						        <div class="swiper-container js-carousel-clients">
+                                    <div class="swiper-wrapper">
+								        <!-- Tool item -->
+                                        <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/tools/awsicon.png" alt="Logo" /></a>
+								        </figure>
+									
+								        <!-- Tool item -->
+                                        <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/tools/githubicon.png" alt="Logo" /></a>
+								        </figure>
+
+								        <!-- Tool item -->
+                                        <figure class="swiper-slide">
+								            <a href="#"><img class="logo-client" src="assets/images/tools/terraformicon.png" alt="Logo" /></a>
+								        </figure>
+
+								        <!-- Tool item -->
+                                        <figure class="swiper-slide">
+								   	        <a href="#"><img class="logo-client" src="assets/images/tools/giticon.png" alt="Logo" /></a>
+								        </figure>
+									
+								        <!-- Tool item -->
+                                        <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/tools/dockericon.png" alt="Logo" /></a>
+								        </figure>
+									
+								        <!-- Tool item -->
+                                        <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/tools/pythonicon.png" alt="Logo" /></a>
+								        </figure>
+										 <!-- Tool item -->
+										 <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/tools/html5icon.png" alt="Logo" /></a>
+								        </figure>
+										
+							        </div>
+   
+						        </div>
+								<div class="swiper-pagination"></div>
+								<!-- /swiper-container -->
+								<!-- Skills -->
+								<h2 class="title title--h2 mt-3">My Skills</h2>
+								<div class="box box-inner mb-0">
+									<!-- Skill item -->
+									<div class="progress">
+										<div class="progress-text"><span>AWS Leadership Principles Driven</span> ✔</div>
+										<div class="progress-bar"><span role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></span></div>
+									</div>
+		
+									<!-- Skill item -->
+									<div class="progress">
+										<div class="progress-text"><span>DevOps & Solutions Architect Mindset</span> ✔ </div>
+										<div class="progress-bar"><span role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></span></div>
+									</div>
+		
+									<!-- Skill item -->
+									<div class="progress">
+										<div class="progress-text"><span> Infrastructure as Code (CloudFormation & Terraform)</span> ✔ </div>
+										<div class="progress-bar"><span role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></span></div>
+									</div>
+		
+									<!-- Skill item -->
+									<div class="progress">
+										<div class="progress-text"><span>Communication</span> ✔ </div>
+										<div class="progress-bar"><span role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></span></div>
+									</div>
+								</div>
+						    </div>
+							<!-- RESUME -->
+							<div id="resume" class="tab-pane fade _tabcontent" role="tabpanel" aria-labelledby="resume-tab"><!-- id="resume-tab" -->
+                                <div class="pb-3">
+									<h1 class="title title--h1 title__separate">Resume</h1>
+								</div>
+								
+								<!-- Education -->
+								<h2 class="title title--h2"><span class="box icon-box"><i class="font-icon feathericon-book-open"></i></span>Education</h2>
+								<div class="timeline">
+									<!-- School -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">University of Minnesota</h5>
+										<span class="timeline__period">2015 — 2019</span>
+										<p class="timeline__description">Bachelor of Science in Business & Marketing</p>
+										<p><i>Minor in Leadership</i></p>
+									</article>
+												
+								</div>
+		
+								<h2 class="title title--h2"><span class="box icon-box"><i class="font-icon feathericon-code"></i></span>Technical Projects</h2>
+								<div class="timeline">
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">Cloud Resume Challenge
+										</h5>
+										<p> <li>Designed a decoupled resume web app (this site) that utilizes AWS serverless framework, AWS S3, and AWS Route53 to host a static site built with HTML, CSS, & Javascript.
+										</li> </p>
+										<p> <li>Built a CI/CD pipeline to automate the integration and deployment of front and back-end code with GitHub Actions and AWS SAM 
+										</li> </p>
+										<p> <li>Implemented a system to track site visits using AWS DynamoDB, Lambda, and API Gateway 
+										</li> </p>
+										<p> <li>Enforced security through HTTPS connection and ensured availability by accelerating content delivery using AWS CloudFront 
+										</li> </p>
+									</article>
+												
+									<!-- Item -->
+										<article class="timeline__item">
+											<h5 class="title title--h4 timeline__title">AWS Three-tier ESports Web Application
+											</h5>
+											<p> <li>Deployed and hosted a highly-available Esports WordPress application with scalable and resilient architecture using AWS EC2, RDS, Route 53, ASG and VPC 
+											</li> </p>
+											<p> <li>Created a Launch template to provide automatic provisioning to accelerate build time  
+											</li> </p>
+											<p> <li>Ensured elasticity via Auto Scaling Group and Application Load Balancer based on user and request load 
+											</li> </p>
+										</article>
+									
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">AWS Serverless Reminder Application
+										</h5>
+										<p> <li>Implemented a serverless reminder application using AWS Step Functions, Lambda, API Gateway, S3, SNS, and SES 
+										</li> </p>
+										<p> <li>Integrated a static frontend site hosted on a S3 bucket that passes inputted data to a state machine 
+										</li> </p>
+										<p> <li>Configured frontend site and state machine to send either an email or SMS reminder with personalized end user message 
+										</li> </p>
+									</article>
+
+								<!-- Item -->
+								<article class="timeline__item">
+									<h5 class="title title--h4 timeline__title">AWS & on-Premise (Simulated) Hybrid Directory
+									</h5>
+									<p> <li>Integrated multiple on-premise active directory domains using AWS VPC, IGW, Workspaces, and AWS FSx 
+									</li> </p>
+									<p> <li>Incorporated two-way forest trust and used AWS services with on-premise identities  
+								</article>
+
+								
+								</div>
+								<h2 class="title title--h2"><span class="box box--s2 icon-box"><i class="font-icon feathericon-activity"></i></span> Work Experience</h2>
+								<div class="timeline">
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">Loan Specialist @ Small Business Association</h5>
+										<span class="timeline__period">Nov 2020 — May 2022</span>
+										<p> <li>Executed the loan origination process, including ordering credit reports, appraisals, preliminary title reports, criminal history, and tax filings </li> </p>
+										<p> <li>Investigated and interpreted personal and business data provided by businesses and nonprofits to resolve discrepancies to meet loan requirements </li> </p>
+										<p> <li>Assisted small business owners and nonprofits obtain 85 million dollars  in unsecured loans and secured loans as well as 30 million dollars in disaster grants </li> </p>
+
+										</article>
+												
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">Social Media & Partnerships Manager @ Intellix Media</h5>
+										<span class="timeline__period">Jan 2019 — Nov 2020</span>
+										<p> <li>Owning the influencer engagement roadmap, collaborated with various influencers in different niches to implement marketing strategies for clients to drive new followers to social media pages and increase conversions </li> </p>
+										<p> <li>Served as Synergist connecting influencers, campaign managers, and clients to our marketing campaigns </li> </p>
+										<p> <li>Managed existing strategic brand partnerships and nurtured the daily relationships with influencers </li> </p>
+ 
+										</article>
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">Marketing Strategist Intern @ Jessen Media</h5>
+										<span class="timeline__period">Jan 2018 — May 2018</span>
+										<p> <li>Implemented a detailed content strategy for three Jessen Media brands that involved creation + curation of content related to all  brands  </li> </p>
+										<p> <li>Developed an email marketing strategy to grow the audience base of three Jessen Media brands to drive ecommerce sales using Hootsuite  </li> </p>
+										<p> <li>Integrated an consumer-oriented sales strategy to incentivize customers on offers that were promoted by the Jessen Media brands </li> </p>
+										<p> <li>Introduced a conversion strategy to boost sales through display and social media ads
+
+										</article>
+												
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">Technical Support Specialist @ University of Minnesota Information Technology</h5>
+										<span class="timeline__period">Nov 2015— Dec 2018</span>
+										<p> <li>Acted as a point of support contact for managing telecommunications and coordinated the resolution of University wide system outages  </li> </p>
+										<p> <li>Diagnosed and resolved a range of hardware, software, networking and connectivity issues while delivering technical training on hardware/software to end-users  </li> </p>
+										<p> <li>Utilized Active Directory, System Center Configuration Manager, Microsoft Powershell, Bomgar, Service Now, and Jamf application to perform various day-to-day duties  </li> </p>
+										<p> <li>Ensured proper maintenance and configuration of workstations, printers, and all computer peripherals across 4 core locations with over 100 devices  </li> </p>
+										<p> <li>Created help desk knowledge base documentation with step by step instructions on how to resolve some of the most common computer, networking, and software issues for University of Minnesota systems  </li> </p>
+
+
+
+
+										</article>
+								</div>
+								
+								
+							</div>
+							
+							<!-- Blog -->
+							<div id="blog" class="tab-pane fade _tabcontent" role="tabpanel" aria-labelledby="blog-tab"><!-- id="blog-tab" -->
+                                <div class="pb-0 pb-sm-2">
+									<h1 class="title title--h1 title__separate">Blog</h1>
+								</div>
+		
+								<!-- Post Grid -->
+								<div class="news-grid">
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<a class="news-item__link" href="#"></a>
+											<img class="cover lazyload" src="assets/images/blog/cloudresumecover.png" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<div class="news-item__date"><span>Cloud</span>Dec 3, 2022</div>
+											<h2 class="title title--h2"><a href="#">My Cloud Resume Challenge Journey</a></h2>
+											<p>See how I've built a highly-available web app in AWS with CI/CD worklow to showcase my resume</p>
+										</div>
+									</article>
+									
+					
+								</div><!-- /news-grid -->
+							</div>
+						</div><!-- /content -->
+					</div><!-- /box-outer -->
+		        </div><!-- /col -->
+			</div><!-- /sticky-parent -->
+		</div><!-- /container -->
+    </main>
+
+    <div class="back-to-top"></div>
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+</html>
