@@ -14,13 +14,13 @@ Coming Soon
 
 **Tech Stack**:
 
--S3 
--AWS CloudFront
--Route 53
--Certificate Manager
--AWS Lambda
--Dynamo DB
--Github Actions
--TerraForm
--Python (boto3)
--HTML/CSS/Javascript
+- S3 
+- AWS CloudFront
+- Route 53
+- Certificate Manager
+- AWS Lambda
+- Dynamo DB
+- Github Actions
+- TerraForm
+- Python (boto3)
+- HTML/CSS/Javascript
