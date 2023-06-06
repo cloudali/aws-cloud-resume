@@ -16,7 +16,7 @@
     <!-- Open Graph data -->
     <meta property="og:title" content="Ali's Cloud Resume" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="cloudali.io" />
+    <meta property="og:url" content="cloudali.net" />
     <meta property="og:image" content="assets/images/social.jpg" />
     <meta property="og:description" content="Web resume made in AWS." />
     <meta property="og:site_name" content="Ali's Cloud Resume" />
@@ -34,7 +34,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
 	
 </head>
-<body>
+<body onLoad="updateCounter()">
     <main class="main">
 	    <div class="container gutter-top gutter-bottom">
 		    <div class="row sticky-parent">
@@ -49,7 +49,7 @@
 
 						    <div class="text-xl-center">
 						        <h3 class="title title--h3 sidebar__name">Ali Yusuf</h3>
-							    <div class="visitor">Views: <span id="visitor"></span>
+							    <div class="visitor" onLoad="updateCounter()">Visitors: <span id="visitor"></span>
 			
 						    </div>
 
@@ -392,5 +392,8 @@
 	<script src="assets/js/jquery-3.4.1.min.js"></script>
 	<script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/common.js"></script>
+	<script src="assets/js/views.js"></script>
+
+
 </body>
 </html>

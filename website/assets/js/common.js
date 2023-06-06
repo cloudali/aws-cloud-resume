@@ -12,7 +12,7 @@ $(document).ready(function() {
     /*-----------------------------------------------------------------
       Visitor Counter
     -------------------------------------------------------------------*/
-  
+  /*
     fetch("https://ivtom7z4ocfndyvs5f67dy2d7a0zsmrt.lambda-url.us-east-1.on.aws/")
     .then(response => response.json())
     .then(data => {
@@ -21,6 +21,8 @@ $(document).ready(function() {
         document.getElementById('visitor').innerText = vcount
     
     }
+
+    /*
 
     
     /*-----------------------------------------------------------------
